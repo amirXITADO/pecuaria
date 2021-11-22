@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>02 - Introdução ao VueJS</title>
+    <script src="https://unpkg.com/vue"></script>
+
+</head>   
+<body>
+    <p> Um fazendeiro precisa de ajuda pra conseguir descobrir o valor de sacas que ele consegue por hectare</p>
+    <p> sabendo que 55 é o valor estimulado, ajude  a descobrir as sacas!</p>
+    <div id="app-calc">
+       <p> A quantidade de hectares é {{n1}}</p> 
+       <p> A quantidade de sacas é {{55}}</p> 
+
+
+       <p>A quantidade de sacas é: {{n1*55}}</p>
+
+
+       
+       <input v-model.number="n1" type="number">
+       <input v-model.number ="n2" type="number">
+    </div>
+
+    <script>
+          var app7 = new Vue ({
+          el: '#app-calc',
+          data: {
+              n1: 4,
+              n2: 55, 
+          }
+        })
+    </script>   
+</body>
+</html>
